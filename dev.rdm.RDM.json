@@ -1,0 +1,35 @@
+{
+    "app-id": "dev.rdm.RDM",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "5.15",
+    "sdk": "org.kde.Sdk",
+    "command": "rdm",
+    "finish-args": [
+        "--share=ipc",
+        "--socket=x11",
+        "--socket=wayland",
+        "--share=network",
+        "--filesystem=home",
+        "--device=dri"
+    ],
+    "modules": [
+        "pip-dependencies.json",
+        {
+            "name": "rdm",
+            "buildsystem": "simple",
+            "builddir": true,
+            "build-commands": [
+                "pushd ./3rdparty/lz4/build/cmake && cmake -DBUILD_STATIC_LIBS=true && make -j $FLATPAK_BUILDER_N_JOBS && popd",
+                "pushd ./src && lrelease rdm.pro && qmake && make -j $FLATPAK_BUILDER_N_JOBS && popd",
+                "cp ./bin/linux/release/rdm $FLATPAK_DEST/bin"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/uglide/RedisDesktopManager",
+                    "commit": "0b2a808f32e18421f64aae30221eb97caa838f06"
+                }
+            ]
+        }
+    ]
+}
