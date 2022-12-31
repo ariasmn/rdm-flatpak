@@ -1,16 +1,13 @@
-# RDM Flatpak files
+# RESP.app (RDM) Flatpak files
 
-Needed files for the packaging of [RDM](https://github.com/uglide/RedisDesktopManager) in Flatpak.
+Needed files for the packaging of [RESP.app](https://github.com/uglide/RedisDesktopManager) (formerly RedisDesktopManager) in Flatpak.
 
-# Upload to Flathub
+# Go check RESP on Flathub! 
 
-Check this Flathub's [tutorial](https://github.com/flathub/flathub/wiki/App-Submission#how-to-submit-an-app)
+Glad to see that RESP is [available on Flathub](https://flathub.org/apps/details/app.resp.RESP). :tada:
 
-# Errors
+The developer forked this repository and used it as a base to package the app in Flatpak. Super glad that I could help in the process.
 
-For an unknown reason, the styles on the app are a bit buggy.
-Since I don't know that much about Qt nor Flatpak, I have asked the Flatpak KDE runtime developers for help.
+# Base for other projects
 
-See https://invent.kde.org/packaging/flatpak-kde-runtime/-/issues/20
-
-Also, since my use of the app is quite simple (just locally) I haven't fully tested it.
+I'm leaving this repository open and public, so other apps with the same structure can use it as a starting point
