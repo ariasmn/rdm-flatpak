@@ -4,7 +4,9 @@ Needed files for the packaging of [RESP.app](https://github.com/uglide/RedisDesk
 
 # Go check RESP on Flathub! 
 
-Glad to see that RESP is [available on Flathub](https://flathub.org/apps/details/app.resp.RESP). :tada:
+<del>Glad to see that RESP is [available on Flathub](https://flathub.org/apps/details/app.resp.RESP). :tada:</del>
+
+RESP is now [RedisInsight](https://flathub.org/apps/details/com.redis.RedisInsight).
 
 The developer forked this repository and used it as a base to package the app in Flatpak. Super glad that I could help in the process.
 
